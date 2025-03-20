@@ -1,0 +1,154 @@
+main{
+  
+  margin-top: 60px;
+
+}
+
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  
+  max-width: 3100px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.search-not-found{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-not-found a{
+  text-decoration: underline;
+}
+
+
+@media (max-width: 2000px) {
+  .products-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 1600px) {
+  .products-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1300px) {
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width: 575px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-container{
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgb(231, 231, 231);
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding: 40px 25px 25px 25px;
+}
+
+.product-image{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-image-container{
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.product-name{
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.product-rating-container{
+  display: flex;
+  align-items: center;
+  
+  margin-bottom: 10px;
+}
+
+.product-rating-stars{
+  width: 100px;
+  margin-right: 5px; 
+}
+
+.product-rating-count{  
+  margin-top: 3px;
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+}
+
+.product-price{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+
+}
+
+.product-price:after {
+	content: ' \20BD';
+}
+
+.product-quantity-container {
+  margin-bottom: 17px;
+}
+
+.extra-info{
+  color: gray;
+  font-size: 10px;
+}
+
+.product-spacer{
+ flex:1;
+}
+
+.added-to-cart{
+  display: flex;
+  align-items: center;
+  color: rgb(6, 125, 98);
+  
+  margin-bottom: 8px;
+  opacity: 0;
+}
+
+.added-to-cart img {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.added-to-cart-visible{
+
+  opacity: 1;
+}
